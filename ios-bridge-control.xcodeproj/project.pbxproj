@@ -16,6 +16,7 @@
 		89EC4DB81BD9E9B0000510B2 /* ios_bridge_controlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC4DB71BD9E9B0000510B2 /* ios_bridge_controlTests.swift */; };
 		89EC4DC31BD9E9B0000510B2 /* ios_bridge_controlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC4DC21BD9E9B0000510B2 /* ios_bridge_controlUITests.swift */; };
 		89EC4DD11BD9E9CE000510B2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 89EC4DD01BD9E9CE000510B2 /* .gitignore */; };
+		89EC4DD31BD9ECEE000510B2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89EC4DD21BD9ECEE000510B2 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		89EC4DC21BD9E9B0000510B2 /* ios_bridge_controlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_bridge_controlUITests.swift; sourceTree = "<group>"; };
 		89EC4DC41BD9E9B0000510B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89EC4DD01BD9E9CE000510B2 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		89EC4DD21BD9ECEE000510B2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				89EC4DA91BD9E9B0000510B2 /* Assets.xcassets */,
 				89EC4DAB1BD9E9B0000510B2 /* LaunchScreen.storyboard */,
 				89EC4DAE1BD9E9B0000510B2 /* Info.plist */,
+				89EC4DD21BD9ECEE000510B2 /* Settings.bundle */,
 			);
 			path = "ios-bridge-control";
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			files = (
 				89EC4DD11BD9E9CE000510B2 /* .gitignore in Resources */,
 				89EC4DAD1BD9E9B0000510B2 /* LaunchScreen.storyboard in Resources */,
+				89EC4DD31BD9ECEE000510B2 /* Settings.bundle in Resources */,
 				89EC4DAA1BD9E9B0000510B2 /* Assets.xcassets in Resources */,
 				89EC4DA81BD9E9B0000510B2 /* Main.storyboard in Resources */,
 			);
