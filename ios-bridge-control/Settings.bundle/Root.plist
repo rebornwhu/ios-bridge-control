@@ -19,6 +19,10 @@
 			<string>Commanding Officer</string>
 			<key>Key</key>
 			<string>officer</string>
+			<key>AutocapitalizationType</key>
+			<string>Words</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
 		</dict>
 	</array>
 </dict>
