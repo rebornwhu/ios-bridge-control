@@ -17,6 +17,7 @@
 		89EC4DC31BD9E9B0000510B2 /* ios_bridge_controlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC4DC21BD9E9B0000510B2 /* ios_bridge_controlUITests.swift */; };
 		89EC4DD11BD9E9CE000510B2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 89EC4DD01BD9E9CE000510B2 /* .gitignore */; };
 		89EC4DD31BD9ECEE000510B2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89EC4DD21BD9ECEE000510B2 /* Settings.bundle */; };
+		F398E8C71BE71734005FD21F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398E8C61BE71734005FD21F /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		89EC4DC41BD9E9B0000510B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89EC4DD01BD9E9CE000510B2 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		89EC4DD21BD9ECEE000510B2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		F398E8C61BE71734005FD21F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				89EC4DAB1BD9E9B0000510B2 /* LaunchScreen.storyboard */,
 				89EC4DAE1BD9E9B0000510B2 /* Info.plist */,
 				89EC4DD21BD9ECEE000510B2 /* Settings.bundle */,
+				F398E8C61BE71734005FD21F /* Constants.swift */,
 			);
 			path = "ios-bridge-control";
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				89EC4DA51BD9E9B0000510B2 /* SecondViewController.swift in Sources */,
 				89EC4DA11BD9E9B0000510B2 /* AppDelegate.swift in Sources */,
 				89EC4DA31BD9E9B0000510B2 /* FirstViewController.swift in Sources */,
+				F398E8C71BE71734005FD21F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +500,7 @@
 				89EC4DC91BD9E9B0000510B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89EC4DCA1BD9E9B0000510B2 /* Build configuration list for PBXNativeTarget "ios-bridge-controlTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +509,7 @@
 				89EC4DCC1BD9E9B0000510B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89EC4DCD1BD9E9B0000510B2 /* Build configuration list for PBXNativeTarget "ios-bridge-controlUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +518,7 @@
 				89EC4DCF1BD9E9B0000510B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
