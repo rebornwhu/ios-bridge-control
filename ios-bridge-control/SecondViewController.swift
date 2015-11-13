@@ -24,12 +24,28 @@ class SecondViewController: UIViewController {
     }
 
     @IBAction func engineSwitchTapped(sender: AnyObject) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setBool(engineSwitch.on, forKey: warpDriveKey)
     }
 
     @IBAction func warpSliderTouched(sender: AnyObject) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setFloat(warpFactorSlider.value, forKey: warpFactorKey)
     }
     
     @IBAction func settingsButtonClicked(sender: AnyObject) {
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        refreshFields()
+    }
+    
+    func refreshFields() {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        engineSwitch.on = defaults.boolForKey(warpDriveKey)
+        warpFactorSlider.value = defaults.floatForKey(warpFactorKey)
     }
 }
 
