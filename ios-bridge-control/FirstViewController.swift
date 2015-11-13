@@ -30,6 +30,23 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func refreshFields() {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        officerLabel.text = defaults.stringForKey(officerKey)
+        authorizationCodeLabel.text = defaults.stringForKey(authorizatoinCodeKey)
+        rankLabel.text = defaults.stringForKey(rankKey)
+        warpDriveLabel.text = defaults.boolForKey(warpDriveKey) ? "Enaged" : "Disabled"
+        warpFactorLabel.text = defaults.objectForKey(warpFactorKey)?.stringValue
+        favoriteTeaLabel.text = defaults.stringForKey(favoriteTeaKey)
+        favoriteCaptainLabel.text = defaults.stringForKey(favoriteCaptainKey)
+        favoriteGadgetLabel.text = defaults.stringForKey(favoriteGadgetKey)
+        favoriteAlienLabel.text = defaults.stringForKey(favoriteAlienKey)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        refreshFields()
+    }
 }
 
