@@ -26,11 +26,13 @@ class SecondViewController: UIViewController {
     @IBAction func engineSwitchTapped(sender: AnyObject) {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setBool(engineSwitch.on, forKey: warpDriveKey)
+        defaults.synchronize()
     }
 
     @IBAction func warpSliderTouched(sender: AnyObject) {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setFloat(warpFactorSlider.value, forKey: warpFactorKey)
+        defaults.synchronize()
     }
     
     @IBAction func settingsButtonClicked(sender: AnyObject) {
@@ -38,8 +40,11 @@ class SecondViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
+    
         refreshFields()
+        
+        let app = UIApplication.sharedApplication()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "applicationWillEnterForeground:", name: UIApplicationWillEnterForegroundNotification, object: app)
     }
     
     func refreshFields() {
@@ -47,5 +52,16 @@ class SecondViewController: UIViewController {
         engineSwitch.on = defaults.boolForKey(warpDriveKey)
         warpFactorSlider.value = defaults.floatForKey(warpFactorKey)
     }
+    
+    func applicationWillEnterForeground(notification:NSNotification) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.synchronize()
+        refreshFields()
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
 }
-
