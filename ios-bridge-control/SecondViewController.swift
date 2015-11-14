@@ -36,6 +36,7 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func settingsButtonClicked(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
     }
     
     override func viewWillAppear(animated: Bool) {
